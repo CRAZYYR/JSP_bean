@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean  id="user" class="com.mylzs.factory.UserFactory" factory-method="newInstance">
+	<constructor-arg index="0" value="wangwu" ></constructor-arg>
+	</bean>
+	<!-- Id是bean的唯一标识 ,如果没有ID,name为标识符
+	
+	
+	
+	
+	 -->
+	<alias name="user" alias="user1"/>
+	
+</beans>

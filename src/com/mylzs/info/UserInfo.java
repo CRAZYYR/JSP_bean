@@ -6,6 +6,7 @@ import java.util.Properties;
 import java.util.Set;
 
 public class UserInfo {
+	private User user=null;
 	private String name;
 	private String[] books;
 	private String address;
@@ -13,6 +14,15 @@ public class UserInfo {
 	private Map<String, String> card;
 	private Set<String> games;
 	private Properties properties;
+	public void setUser(User user) {
+		this.user = user;
+	}
+	
+	public UserInfo(User user) {
+		super();
+		this.user = user;
+	}
+
 	public void setProperties(Properties properties) {
 		this.properties = properties;
 	}

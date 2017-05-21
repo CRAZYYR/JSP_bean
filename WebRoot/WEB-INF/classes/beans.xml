@@ -2,8 +2,27 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" >
 
+	<!-- autowire 自动配置
 	
+	Byname 根据相应的Bean
+	
+	bytype 通过类型
+	
+	constructor  通过构造方法自动装载
+	 -->
+	 
+	 <!-- 
+	 scope 属性来配置bean的作用域
+	 scope="prototype"
+	 scope="request"
+	 scope="session"
+	 scope="singleton"
+	  -->
 	<import resource="spring/xml/demo.xml"/>
+	<bean  id="usre_02" class="com.mylzs.info.User" autowire="byType"></bean>
+	<bean id="user_info" class="com.mylzs.info.UserInfo" autowire="constructor">
+	
+	</bean>
 </beans>

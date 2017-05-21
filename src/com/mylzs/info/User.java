@@ -7,6 +7,8 @@ public class User {
 	
 	public User() {
 		super();
+		System.out.println("自动装载被调用");
+		
 	}
 	
 	public User(String name, int age) {
@@ -15,12 +17,12 @@ public class User {
 		this.age = age;
 	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//	public void setAge(int age) {
+//		this.age = age;
+//	}
 	@Override
 	public String toString() {
 		return "User [name=" + name + ", age=" + age + "]";

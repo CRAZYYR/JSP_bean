@@ -1,7 +1,5 @@
 package com.mylzs.dynamic;
 
-import com.mylzs.info.UserInfo;
-
 public class test {
 
 	/**
@@ -17,8 +15,8 @@ public class test {
 		User user1=new User();
 		ProxyInvocationHandler handler=new ProxyInvocationHandler();
 		handler.setObject(user1);
-		User user=(User) handler.getPro();
-		user.add();
+		UserInfe user= (UserInfe) handler.getPro();
+		user.delete();
 		
 	}
 

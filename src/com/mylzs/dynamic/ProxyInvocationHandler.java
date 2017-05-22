@@ -19,9 +19,14 @@ public class ProxyInvocationHandler implements InvocationHandler {
 	 */
 	public Object invoke(Object proxy, Method method, Object[] args)
 			throws Throwable {
+		log(method.getName());
+		//System.out.println(method.getName());
 		Object result= method.invoke(object, args);
 		// TODO Auto-generated method stub
 		return result;
+	}
+	public void log(String name){
+		System.out.println("执行了"+name+"方法");
 	}
 
 }

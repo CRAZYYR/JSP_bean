@@ -16,7 +16,7 @@ public class test {
 		ProxyInvocationHandler handler=new ProxyInvocationHandler();
 		handler.setObject(user1);
 		UserInfe user= (UserInfe) handler.getPro();
-		user.delete();
+		user.update();
 		
 	}
 

@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import "main.css";
+body {
+  background-color: #949494;
+}
+span {
+  width-3: #ffffff;
+  height-3: 3px;
+  margin: 5px 5px 5px 5px;
+}
+.sss {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+.zscool {
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.ssss {
+  width: 10px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.sanjiao {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border-width: 30px;
+  border-color: transparent transparent red transparent;
+  border-style: dashed dashed solid dashed;
+}
+.list {
+  width: 500px;
+  height: 100px;
+  list-style: none;
+}
+.list li {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  background-color: aqua;
+  cursor: pointer;
+}
+.list li a {
+  text-decoration: none;
+}
+.list li:hover {
+  background-color: blueviolet;
+}
+.calc_demo {
+  width: calc(90%);
+}
+.import_demo {
+  width-3: 200px !important;
+  height-3: 30px !important;
+  margin: 10px 10px 10px 10px !important;
+}
+/*一道神奇的世界*/
+body {
+  background-color: #949494;
+}
+span {
+  width-3: #ffffff;
+  height-3: 3px;
+  margin: 5px 5px 5px 5px;
+}
+.sss {
+  margin-left: 20px;
+  padding-bottom: 20px;
+}
+.zscool {
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.ssss {
+  width: 10px;
+  height: 20px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.sanjiao {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border-width: 30px;
+  border-color: transparent transparent red transparent;
+  border-style: dashed dashed solid dashed;
+}
+.list {
+  width: 500px;
+  height: 100px;
+  list-style: none;
+}
+.list li {
+  display: block;
+  float: left;
+  margin-left: 10px;
+  background-color: aqua;
+  cursor: pointer;
+}
+.list li a {
+  text-decoration: none;
+}
+.list li:hover {
+  background-color: blueviolet;
+}
+.calc_demo {
+  width: calc(100%-10px);
+}
+.import_demo {
+  width-3: 200px !important;
+  height-3: 30px !important;
+  margin: 10px 10px 10px 10px !important;
+}
+/*一道神奇的世界*/

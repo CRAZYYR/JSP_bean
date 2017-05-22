@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import (less) "main.css";
+body{
+    background-color:#949494;
+    
+}
+@left:20px;
+//ul{
+//  margin-left: 20px;
+//  padding-bottom: 10px;
+//  li{
+//      left: @left;
+//  }
+//}
+//.kiuuu{
+//  .ssd(20px);
+//}
+
+.www(@www){
+     margin-left: 20px;
+    padding-bottom:@www;
+
+}
+.mixin(@width; @height; @margin: 2em) {  
+    width-3: @width;  
+    height-3: @height;  
+    margin: @margin @margin @margin @margin;  
+}
+span {  
+    .mixin(#fff,3px,5px);  
+} 
+.sss{
+    .www(20px);
+}
+.border_radile(@rad:5px){
+    -webkit-border-radius: @rad;
+    -moz-border-radius: @rad;
+    border-radius: @rad;
+}
+.zscool{
+    height: 20px;
+    .border_radile(10px);
+}
+.ssss{
+    width: 10px;
+  .zscool;  
+}
+.sanjiao{
+
+    width:0px;
+    height:0px;
+    overflow: hidden;
+    border-width:30px;
+
+    border-color: transparent transparent red transparent;
+    border-style: dashed dashed solid dashed;
+}
+@width:500px;@height:100px;
+.list{
+    width:@width;
+    height:@height;
+    list-style: none;
+    li{
+        display: block;
+        float: left;
+        margin-left: 10px;
+        background-color: aqua;
+        cursor:pointer;
+        a{
+            text-decoration: none;
+            
+        }
+
+        &:hover{
+            background-color:blueviolet;
+        }
+    }
+}
+.calc_demo{
+    width: ~'calc(100%-10px)';
+}
+//important 的用法
+.import_demo{
+    .mixin(200px,30px,10px) !important;
+}
+/*一道神奇的世界*/
+//一道神奇的世界
+//变量

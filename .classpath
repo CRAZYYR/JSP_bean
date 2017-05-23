@@ -6,7 +6,7 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lib/spring-aop-4.1.6.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lib/spring-aop-4.1.6.RELEASE.jar" sourcepath="D:/web/apache-tomcat-7.0.77/dic/spring/demo/12spring4_mybatis/lib/spring-aop-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lib/spring-aspects-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lib/spring-beans-4.1.6.RELEASE.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/lib/spring-context-4.1.6.RELEASE.jar"/>

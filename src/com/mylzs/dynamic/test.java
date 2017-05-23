@@ -1,5 +1,8 @@
 package com.mylzs.dynamic;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class test {
 
 	/**
@@ -12,11 +15,14 @@ public class test {
 //		handler.setObject(host);
 //		Rent rent=(Rent) handler.getPro();
 //		rent.rent();
-		User user1=new User();
-		ProxyInvocationHandler handler=new ProxyInvocationHandler();
-		handler.setObject(user1);
-		UserInfe user= (UserInfe) handler.getPro();
-		user.update();
+//		User user1=new User();
+//		ProxyInvocationHandler handler=new ProxyInvocationHandler();
+//		handler.setObject(user1);
+//		UserInfe user= (UserInfe) handler.getPro();
+//		user.update();
+		ApplicationContext app=new ClassPathXmlApplicationContext("beans.xml");
+		User user=(User) app.getBean("user");
+		user.add();
 		
 	}
 

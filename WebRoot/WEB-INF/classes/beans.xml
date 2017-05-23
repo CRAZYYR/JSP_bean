@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd" >
+       xmlns:aop="http://www.springframework.org/schema/aop"
+   	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 	<!-- autowire 自动配置
 	
@@ -25,4 +27,16 @@
 	<bean id="user_info" class="com.mylzs.info.UserInfo" autowire="constructor">
 	
 	</bean>
+	<!-- AOP -->
+	<bean id="user" class="com.mylzs.dynamic.User"></bean>
+	<bean id="log" class="com.mylzs.log.Log"/>
+		<aop:config>
+		<aop:aspect ref="log">
+			<aop:pointcut expression="execution(* com.mylzs.dynamic.*.*(..))" id="pointcut"/>
+			<aop:before method="before" pointcut-ref="pointcut"/>
+			<aop:after method="after"  pointcut-ref="pointcut"/>
+		</aop:aspect>
+	</aop:config>
+	<!--<aop:aspectj-autoproxy></aop:aspectj-autoproxy>-->
+
 </beans>
